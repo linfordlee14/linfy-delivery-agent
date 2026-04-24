@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Linfy Tech</title>
+  <meta name="description" content="Learn about Linfy Tech — who we are, our mission, our values, and the team behind the work." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { brand: { dark: '#0F172A', indigo: '#6366F1', 'indigo-hover': '#4F46E5' } }, fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] } } }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-brand-dark text-white font-sans antialiased dark">
+  <header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2 group"><span class="w-8 h-8 rounded-lg bg-brand-indigo flex items-center justify-center text-white font-black text-sm group-hover:scale-110 transition-transform">L</span><span class="font-bold text-lg tracking-tight">Linfy<span class="text-brand-indigo">Tech</span></span></a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <a href="services.html" class="hover:text-white transition-colors">Services</a>
+        <a href="about.html" class="text-white border-b-2 border-brand-indigo pb-0.5">About</a>
+        <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+      </nav>
+      <a href="contact.html" class="hidden md:inline-flex items-center gap-2 bg-brand-indigo hover:bg-brand-indigo-hover text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors">Get Started <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg></a>
+      <button id="menu-btn" class="md:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 transition-colors" aria-label="Toggle menu"><svg xmlns="http://www.w3.org/2000/svg" id="icon-open" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg><svg xmlns="http://www.w3.org/2000/svg" id="icon-close" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-brand-dark/95 backdrop-blur-md border-t border-white/10"><nav class="flex flex-col px-6 py-4 gap-4 text-sm font-medium text-slate-300"><a href="index.html" class="hover:text-white">Home</a><a href="services.html" class="hover:text-white">Services</a><a href="about.html" class="text-white">About</a><a href="contact.html" class="hover:text-white">Contact</a><a href="contact.html" class="mt-2 inline-flex items-center justify-center bg-brand-indigo text-white px-5 py-2.5 rounded-lg font-semibold">Get Started</a></nav></div>
+  </header>
+  <main class="pt-16">
+    <section class="relative py-24 px-6 lg:px-8 overflow-hidden">
+      <div class="pointer-events-none absolute inset-0"><div class="absolute -top-24 -left-24 w-[500px] h-[500px] bg-brand-indigo/15 rounded-full blur-[100px]"></div></div>
+      <div class="relative max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <p class="text-brand-indigo text-sm font-semibold uppercase tracking-widest mb-4">About Linfy Tech</p>
+            <h1 class="text-5xl sm:text-6xl font-black leading-tight mb-6">We're builders<br /><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-indigo to-violet-400">at heart.</span></h1>
+            <p class="text-lg text-slate-300 leading-relaxed mb-6">Founded in Cape Town, Linfy Tech was born from a simple belief: the best digital products come from a deep collaboration between creative minds and disciplined engineers.</p>
+            <p class="text-slate-400 leading-relaxed">We work exclusively with tech startups because we thrive in environments where speed, ambiguity, and innovation intersect. Our team brings together world-class designers, full-stack engineers, and product strategists who've all built from zero to one before.</p>
+          </div>
+          <div class="relative"><div class="aspect-square rounded-3xl bg-gradient-to-br from-brand-indigo/30 to-violet-600/20 border border-brand-indigo/30 flex items-center justify-center p-12"><div class="grid grid-cols-2 gap-4 w-full"><div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center"><p class="text-3xl font-black text-brand-indigo">5+</p><p class="text-xs text-slate-400 mt-1">Years Active</p></div><div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center"><p class="text-3xl font-black text-brand-indigo">20+</p><p class="text-xs text-slate-400 mt-1">Team Members</p></div><div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center"><p class="text-3xl font-black text-brand-indigo">3</p><p class="text-xs text-slate-400 mt-1">Continents</p></div><div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-center"><p class="text-3xl font-black text-brand-indigo">$12M</p><p class="text-xs text-slate-400 mt-1">Client ARR Generated</p></div></div></div></div>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 px-6 lg:px-8 border-y border-white/10 bg-white/[0.02]">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16"><p class="text-brand-indigo text-sm font-semibold uppercase tracking-widest mb-3">What Drives Us</p><h2 class="text-4xl font-black">Mission & Values</h2></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-brand-indigo/40 transition-colors"><div class="w-10 h-10 rounded-xl bg-brand-indigo/20 flex items-center justify-center mb-5"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-brand-indigo" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg></div><h3 class="font-bold mb-2">Quality Over Speed</h3><p class="text-slate-400 text-sm leading-relaxed">We build right the first time, so your team doesn't pay the compounding cost of technical debt.</p></div>
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-brand-indigo/40 transition-colors"><div class="w-10 h-10 rounded-xl bg-brand-indigo/20 flex items-center justify-center mb-5"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-brand-indigo" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/></svg></div><h3 class="font-bold mb-2">True Partnership</h3><p class="text-slate-400 text-sm leading-relaxed">We're a strategic extension of your team, not just an outsourced vendor executing tasks.</p></div>
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-brand-indigo/40 transition-colors"><div class="w-10 h-10 rounded-xl bg-brand-indigo/20 flex items-center justify-center mb-5"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-brand-indigo" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg></div><h3 class="font-bold mb-2">Radical Transparency</h3><p class="text-slate-400 text-sm leading-relaxed">No surprises. You get full visibility into progress, blockers, and decisions at every stage.</p></div>
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-8 hover:border-brand-indigo/40 transition-colors"><div class="w-10 h-10 rounded-xl bg-brand-indigo/20 flex items-center justify-center mb-5"><svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-brand-indigo" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div><h3 class="font-bold mb-2">Outcome-Oriented</h3><p class="text-slate-400 text-sm leading-relaxed">We measure success by your business outcomes, not by hours billed or features shipped.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16"><p class="text-brand-indigo text-sm font-semibold uppercase tracking-widest mb-3">The People</p><h2 class="text-4xl font-black">Meet the Team</h2><p class="mt-4 text-slate-400 max-w-xl mx-auto">Experienced builders who've shipped at top-tier startups and scale-ups.</p></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="group bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:border-brand-indigo/50 hover:-translate-y-1 transition-all"><div class="w-20 h-20 rounded-full bg-gradient-to-br from-brand-indigo to-violet-600 flex items-center justify-center text-white font-black text-2xl mx-auto mb-5">L</div><h3 class="font-bold text-lg">Linford Lee</h3><p class="text-brand-indigo text-sm font-medium mb-3">Founder & CEO</p><p class="text-slate-400 text-sm">Product strategist with 10+ years turning early-stage ideas into venture-backed products.</p></div>
+          <div class="group bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:border-brand-indigo/50 hover:-translate-y-1 transition-all"><div class="w-20 h-20 rounded-full bg-gradient-to-br from-violet-600 to-pink-500 flex items-center justify-center text-white font-black text-2xl mx-auto mb-5">S</div><h3 class="font-bold text-lg">Sara Kimani</h3><p class="text-brand-indigo text-sm font-medium mb-3">Head of Design</p><p class="text-slate-400 text-sm">Ex-Figma design lead. Obsessed with interaction design and accessible interfaces.</p></div>
+          <div class="group bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:border-brand-indigo/50 hover:-translate-y-1 transition-all"><div class="w-20 h-20 rounded-full bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-white font-black text-2xl mx-auto mb-5">M</div><h3 class="font-bold text-lg">Marcus Osei</h3><p class="text-brand-indigo text-sm font-medium mb-3">Lead Engineer</p><p class="text-slate-400 text-sm">Full-stack architect. Built and scaled platforms serving 2M+ users across fintech and SaaS.</p></div>
+          <div class="group bg-white/5 border border-white/10 rounded-2xl p-8 text-center hover:border-brand-indigo/50 hover:-translate-y-1 transition-all"><div class="w-20 h-20 rounded-full bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-white font-black text-2xl mx-auto mb-5">N</div><h3 class="font-bold text-lg">Nadia Patel</h3><p class="text-brand-indigo text-sm font-medium mb-3">Growth Lead</p><p class="text-slate-400 text-sm">Data-driven growth strategist. Helped 8 startups achieve product-market fit.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="py-20 px-6 lg:px-8"><div class="max-w-5xl mx-auto"><div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-indigo to-violet-600 p-12 sm:p-16 text-center"><div class="relative"><h2 class="text-3xl sm:text-4xl font-black mb-4">Want to work with us?</h2><p class="text-white/80 mb-8 max-w-xl mx-auto">We take on a limited number of new clients each quarter to ensure every project gets our full focus.</p><a href="contact.html" class="inline-flex items-center gap-2 bg-white text-brand-indigo font-bold px-8 py-4 rounded-xl hover:bg-slate-100 transition-colors shadow-xl">Get in Touch</a></div></div></div></section>
+  </main>
+  <footer class="border-t border-white/10 py-12 px-6 lg:px-8"><div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6"><a href="index.html" class="flex items-center gap-2"><span class="w-7 h-7 rounded-lg bg-brand-indigo flex items-center justify-center text-white font-black text-xs">L</span><span class="font-bold">Linfy<span class="text-brand-indigo">Tech</span></span></a><nav class="flex gap-6 text-sm text-slate-400"><a href="index.html" class="hover:text-white transition-colors">Home</a><a href="services.html" class="hover:text-white transition-colors">Services</a><a href="about.html" class="hover:text-white transition-colors">About</a><a href="contact.html" class="hover:text-white transition-colors">Contact</a></nav><p class="text-xs text-slate-500">© 2025 Linfy Tech. All rights reserved.</p></div></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

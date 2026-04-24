@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Linfy Tech</title>
+  <meta name="description" content="Explore Linfy Tech's full range of digital services: product design, full-stack engineering, cloud infrastructure, and growth strategy." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: { extend: { colors: { brand: { dark: '#0F172A', indigo: '#6366F1', 'indigo-hover': '#4F46E5' } }, fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui'] } } }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-brand-dark text-white font-sans antialiased dark">
+  <header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2 group"><span class="w-8 h-8 rounded-lg bg-brand-indigo flex items-center justify-center text-white font-black text-sm group-hover:scale-110 transition-transform">L</span><span class="font-bold text-lg tracking-tight">Linfy<span class="text-brand-indigo">Tech</span></span></a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="index.html" class="hover:text-white transition-colors">Home</a>
+        <a href="services.html" class="text-white border-b-2 border-brand-indigo pb-0.5">Services</a>
+        <a href="about.html" class="hover:text-white transition-colors">About</a>
+        <a href="contact.html" class="hover:text-white transition-colors">Contact</a>
+      </nav>
+      <a href="contact.html" class="hidden md:inline-flex items-center gap-2 bg-brand-indigo hover:bg-brand-indigo-hover text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors">Get Started <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg></a>
+      <button id="menu-btn" class="md:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 transition-colors" aria-label="Toggle menu"><svg xmlns="http://www.w3.org/2000/svg" id="icon-open" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg><svg xmlns="http://www.w3.org/2000/svg" id="icon-close" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg></button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-brand-dark/95 backdrop-blur-md border-t border-white/10"><nav class="flex flex-col px-6 py-4 gap-4 text-sm font-medium text-slate-300"><a href="index.html" class="hover:text-white">Home</a><a href="services.html" class="text-white">Services</a><a href="about.html" class="hover:text-white">About</a><a href="contact.html" class="hover:text-white">Contact</a><a href="contact.html" class="mt-2 inline-flex items-center justify-center bg-brand-indigo text-white px-5 py-2.5 rounded-lg font-semibold">Get Started</a></nav></div>
+  </header>
+  <main class="pt-16">
+    <section class="relative py-24 px-6 lg:px-8 overflow-hidden">
+      <div class="pointer-events-none absolute inset-0"><div class="absolute top-0 right-0 w-[500px] h-[500px] bg-brand-indigo/15 rounded-full blur-[100px]"></div></div>
+      <div class="relative max-w-7xl mx-auto text-center">
+        <p class="text-brand-indigo text-sm font-semibold uppercase tracking-widest mb-4">Our Services</p>
+        <h1 class="text-5xl sm:text-6xl font-black leading-tight mb-6">Everything you need<br /><span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-indigo to-violet-400">to ship & scale.</span></h1>
+        <p class="max-w-2xl mx-auto text-lg text-slate-400 leading-relaxed">We offer an integrated suite of services designed specifically for the velocity and ambiguity of startup life — from first sketches to post-launch optimisation.</p>
+      </div>
+    </section>
+    <section class="py-16 px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-6 mb-6">
+          <div class="lg:col-span-3 group relative bg-gradient-to-br from-brand-indigo/20 to-violet-600/10 border border-brand-indigo/30 hover:border-brand-indigo/60 rounded-2xl p-10 transition-all hover:-translate-y-1">
+            <div class="w-14 h-14 rounded-2xl bg-brand-indigo/30 flex items-center justify-center mb-6 group-hover:bg-brand-indigo/50 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand-indigo" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg></div>
+            <span class="inline-block text-xs font-semibold uppercase tracking-widest bg-brand-indigo/20 text-brand-indigo px-3 py-1 rounded-full mb-4">Most Popular</span>
+            <h2 class="text-3xl font-black mb-4">Product Design & UX</h2>
+            <p class="text-slate-300 leading-relaxed mb-6">We craft immersive digital experiences grounded in user research and modern design systems. Our designers embed with your team to understand your users deeply, then translate that insight into interfaces that feel effortless.</p>
+            <ul class="space-y-2 text-sm text-slate-400"><li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-indigo"></span>User Research & Journey Mapping</li><li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-indigo"></span>Wireframes & Interactive Prototypes</li><li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-indigo"></span>Design System Creation (Figma)</li><li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-indigo"></span>Usability Testing & Iteration</li></ul>
+          </div>
+          <div class="lg:col-span-2 group relative bg-white/5 hover:bg-white/8 border border-white/10 hover:border-brand-indigo/50 rounded-2xl p-10 transition-all hover:-translate-y-1">
+            <div class="w-14 h-14 rounded-2xl bg-brand-indigo/20 flex items-center justify-center mb-6 group-hover:bg-brand-indigo/40 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 text-brand-indigo" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg></div>
+            <h2 class="text-2xl font-black mb-4">Full-Stack Engineering</h2>
+            <p class="text-slate-300 leading-relaxed mb-6">Production-grade web and mobile applications built with modern frameworks — React, Next.js, Node, and more.</p>
+            <ul class="space-y-2 text-sm text-slate-400"><li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-indigo"></span>MVP Development</li><li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-indigo"></span>API Design & Integration</li><li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-indigo"></span>Mobile Apps (React Native)</li><li class="flex items-center gap-2"><span class="w-1.5 h-1.5 rounded-full bg-brand-indigo"></span>Code Reviews & Audits</li></ul>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-6">
+          <div class="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-brand-indigo/50 rounded-2xl p-8 transition-all hover:-translate-y-1"><div class="w-12 h-12 rounded-xl bg-brand-indigo/20 flex items-center justify-center mb-5 group-hover:bg-brand-indigo/40 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand-indigo" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg></div><h3 class="text-xl font-bold mb-3">Cloud & DevOps</h3><p class="text-slate-400 text-sm leading-relaxed">AWS, GCP, and Azure infrastructure setup, CI/CD pipelines, containerisation, and 24/7 monitoring.</p></div>
+          <div class="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-brand-indigo/50 rounded-2xl p-8 transition-all hover:-translate-y-1"><div class="w-12 h-12 rounded-xl bg-brand-indigo/20 flex items-center justify-center mb-5 group-hover:bg-brand-indigo/40 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand-indigo" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg></div><h3 class="text-xl font-bold mb-3">Growth & Analytics</h3><p class="text-slate-400 text-sm leading-relaxed">Data pipelines, product analytics, A/B testing frameworks, and growth experiment infrastructure.</p></div>
+          <div class="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-brand-indigo/50 rounded-2xl p-8 transition-all hover:-translate-y-1"><div class="w-12 h-12 rounded-xl bg-brand-indigo/20 flex items-center justify-center mb-5 group-hover:bg-brand-indigo/40 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand-indigo" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg></div><h3 class="text-xl font-bold mb-3">Security & Compliance</h3><p class="text-slate-400 text-sm leading-relaxed">Penetration testing, GDPR/SOC 2 readiness, security audits, and best-practice implementation.</p></div>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div class="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-brand-indigo/50 rounded-2xl p-8 transition-all hover:-translate-y-1"><div class="w-12 h-12 rounded-xl bg-brand-indigo/20 flex items-center justify-center mb-5 group-hover:bg-brand-indigo/40 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand-indigo" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg></div><h3 class="text-xl font-bold mb-3">AI & Automation</h3><p class="text-slate-400 text-sm leading-relaxed">LLM integrations, intelligent workflow automation, and custom AI feature development to give your product a competitive edge.</p></div>
+          <div class="group bg-white/5 hover:bg-white/10 border border-white/10 hover:border-brand-indigo/50 rounded-2xl p-8 transition-all hover:-translate-y-1"><div class="w-12 h-12 rounded-xl bg-brand-indigo/20 flex items-center justify-center mb-5 group-hover:bg-brand-indigo/40 transition-colors"><svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand-indigo" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg></div><h3 class="text-xl font-bold mb-3">Dedicated Team Extension</h3><p class="text-slate-400 text-sm leading-relaxed">Senior engineers and designers embedded directly into your team — fully managed, zero overhead.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="py-24 px-6 lg:px-8 border-y border-white/10 bg-white/[0.02]">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16"><p class="text-brand-indigo text-sm font-semibold uppercase tracking-widest mb-3">How We Work</p><h2 class="text-4xl font-black">Our Process</h2></div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center"><div class="w-12 h-12 rounded-full bg-brand-indigo/20 border border-brand-indigo/40 flex items-center justify-center text-brand-indigo font-black text-lg mx-auto mb-5">1</div><h3 class="font-bold mb-2">Discovery</h3><p class="text-slate-400 text-sm">Deep-dive into your goals, users, and constraints to define the scope.</p></div>
+          <div class="text-center"><div class="w-12 h-12 rounded-full bg-brand-indigo/20 border border-brand-indigo/40 flex items-center justify-center text-brand-indigo font-black text-lg mx-auto mb-5">2</div><h3 class="font-bold mb-2">Design</h3><p class="text-slate-400 text-sm">Wireframes, prototypes, and design systems aligned to your brand.</p></div>
+          <div class="text-center"><div class="w-12 h-12 rounded-full bg-brand-indigo/20 border border-brand-indigo/40 flex items-center justify-center text-brand-indigo font-black text-lg mx-auto mb-5">3</div><h3 class="font-bold mb-2">Build</h3><p class="text-slate-400 text-sm">Agile sprints with weekly demos and continuous integration.</p></div>
+          <div class="text-center"><div class="w-12 h-12 rounded-full bg-brand-indigo/20 border border-brand-indigo/40 flex items-center justify-center text-brand-indigo font-black text-lg mx-auto mb-5">4</div><h3 class="font-bold mb-2">Launch & Grow</h3><p class="text-slate-400 text-sm">Production deployment, monitoring, and post-launch optimisation.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="py-20 px-6 lg:px-8"><div class="max-w-5xl mx-auto"><div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-indigo to-violet-600 p-12 sm:p-16 text-center"><div class="relative"><h2 class="text-3xl sm:text-4xl font-black mb-4">Not sure which service fits?</h2><p class="text-white/80 mb-8 max-w-xl mx-auto">Book a free 30-minute strategy call. We'll map out exactly what your startup needs.</p><a href="contact.html" class="inline-flex items-center gap-2 bg-white text-brand-indigo font-bold px-8 py-4 rounded-xl hover:bg-slate-100 transition-colors shadow-xl">Book a Free Call</a></div></div></div></section>
+  </main>
+  <footer class="border-t border-white/10 py-12 px-6 lg:px-8"><div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6"><a href="index.html" class="flex items-center gap-2"><span class="w-7 h-7 rounded-lg bg-brand-indigo flex items-center justify-center text-white font-black text-xs">L</span><span class="font-bold">Linfy<span class="text-brand-indigo">Tech</span></span></a><nav class="flex gap-6 text-sm text-slate-400"><a href="index.html" class="hover:text-white transition-colors">Home</a><a href="services.html" class="hover:text-white transition-colors">Services</a><a href="about.html" class="hover:text-white transition-colors">About</a><a href="contact.html" class="hover:text-white transition-colors">Contact</a></nav><p class="text-xs text-slate-500">© 2025 Linfy Tech. All rights reserved.</p></div></footer>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

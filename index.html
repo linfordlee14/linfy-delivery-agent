@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Linfy Tech — Empowering Tech Startups</title>
+  <meta name="description" content="Linfy Tech is an elite digital agency helping tech startups design, build, and scale world-class products." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark:   '#0F172A',
+              indigo: '#6366F1',
+              'indigo-hover': '#4F46E5',
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'ui-sans-serif', 'system-ui'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-brand-dark text-white font-sans antialiased dark">
+
+  <!-- ───── NAV ───── -->
+  <header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="index.html" class="flex items-center gap-2 group">
+        <span class="w-8 h-8 rounded-lg bg-brand-indigo flex items-center justify-center text-white font-black text-sm group-hover:scale-110 transition-transform">L</span>
+        <span class="font-bold text-lg tracking-tight">Linfy<span class="text-brand-indigo">Tech</span></span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="index.html"    class="text-white border-b-2 border-brand-indigo pb-0.5">Home</a>
+        <a href="services.html" class="hover:text-white transition-colors">Services</a>
+        <a href="about.html"    class="hover:text-white transition-colors">About</a>
+        <a href="contact.html"  class="hover:text-white transition-colors">Contact</a>
+      </nav>
+      <a href="contact.html" class="hidden md:inline-flex items-center gap-2 bg-brand-indigo hover:bg-brand-indigo-hover text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition-colors">
+        Get Started
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+      </a>
+      <button id="menu-btn" class="md:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-white/10 transition-colors" aria-label="Toggle menu">
+        <svg xmlns="http://www.w3.org/2000/svg" id="icon-open" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" id="icon-close" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-brand-dark/95 backdrop-blur-md border-t border-white/10">
+      <nav class="flex flex-col px-6 py-4 gap-4 text-sm font-medium text-slate-300">
+        <a href="index.html"    class="text-white">Home</a>
+        <a href="services.html" class="hover:text-white transition-colors">Services</a>
+        <a href="about.html"    class="hover:text-white transition-colors">About</a>
+        <a href="contact.html"  class="hover:text-white transition-colors">Contact</a>
+        <a href="contact.html"  class="mt-2 inline-flex items-center justify-center gap-2 bg-brand-indigo text-white px-5 py-2.5 rounded-lg font-semibold">Get Started</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ───── HERO ───── -->
+    <section class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+      <div class="pointer-events-none absolute inset-0">
+        <div class="absolute -top-32 -left-32 w-[600px] h-[600px] bg-brand-indigo/20 rounded-full blur-[120px]"></div>
+        <div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-brand-indigo/10 rounded-full blur-[100px]"></div>
+      </div>
+      <div class="pointer-events-none absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%236366F1%22 fill-opacity=%220.04%22%3E%3Cpath d=%22M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+      <div class="relative max-w-7xl mx-auto px-6 lg:px-8 text-center">
+        <div class="inline-flex items-center gap-2 bg-brand-indigo/10 border border-brand-indigo/30 text-brand-indigo text-xs font-semibold uppercase tracking-widest px-4 py-2 rounded-full mb-8 animate-fade-up">
+          <span class="w-1.5 h-1.5 rounded-full bg-brand-indigo animate-pulse"></span>
+          Now accepting new clients — 2025
+        </div>
+        <h1 class="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-black leading-[1.05] tracking-tight mb-8 animate-fade-up animation-delay-100">
+          We Build Products<br />
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-indigo to-violet-400">Startups Love.</span>
+        </h1>
+        <p class="max-w-2xl mx-auto text-lg sm:text-xl text-slate-400 leading-relaxed mb-12 animate-fade-up animation-delay-200">
+          Linfy Tech is a full-service digital agency that partners with ambitious tech startups to design, engineer, and launch products that captivate users and accelerate growth.
+        </p>
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-fade-up animation-delay-300">
+          <a href="services.html" class="inline-flex items-center gap-2 bg-brand-indigo hover:bg-brand-indigo-hover text-white font-semibold px-8 py-4 rounded-xl transition-all hover:scale-105 shadow-lg shadow-brand-indigo/30">
+            Explore Our Services
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </a>
+          <a href="about.html" class="inline-flex items-center gap-2 border border-white/20 hover:border-white/40 text-slate-300 hover:text-white font-semibold px-8 py-4 rounded-xl transition-all">
+            Our Story
+          </a>
+        </div>
+        <div class="mt-24 grid grid-cols-2 sm:grid-cols-4 gap-8 max-w-3xl mx-auto animate-fade-up animation-delay-400">
+          <div class="text-center"><p class="text-4xl font-black text-white">50<span class="text-brand-indigo">+</span></p><p class="text-sm text-slate-400 mt-1">Projects Delivered</p></div>
+          <div class="text-center"><p class="text-4xl font-black text-white">30<span class="text-brand-indigo">+</span></p><p class="text-sm text-slate-400 mt-1">Startup Clients</p></div>
+          <div class="text-center"><p class="text-4xl font-black text-white">98<span class="text-brand-indigo">%</span></p><p class="text-sm text-slate-400 mt-1">Client Satisfaction</p></div>
+          <div class="text-center"><p class="text-4xl font-black text-white">5<span class="text-brand-indigo">★</span></p><p class="text-sm text-slate-400 mt-1">Average Rating</p></div>
+        </div>
+      </div>
+      <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-slate-500 text-xs animate-bounce">
+        <span>Scroll</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      </div>
+    </section>
+
+    <!-- ───── SERVICES TEASER ───── -->
+    <section class="py-28 px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center mb-16">
+          <p class="text-brand-indigo text-sm font-semibold uppercase tracking-widest mb-3">What We Do</p>
+          <h2 class="text-4xl sm:text-5xl font-black">Built for the speed<br />of modern startups.</h2>
+          <p class="mt-4 text-slate-400 max-w-xl mx-auto">From MVP to enterprise scale — we cover the full product lifecycle.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="service-card group relative bg-white/5 hover:bg-white/10 border border-white/10 hover:border-brand-indigo/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
+            <div class="w-12 h-12 rounded-xl bg-brand-indigo/20 flex items-center justify-center mb-6 group-hover:bg-brand-indigo/40 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand-indigo" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Product Design & UX</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">User research, wireframing, and pixel-perfect UI design that converts visitors into loyal users.</p>
+          </div>
+          <div class="service-card group relative bg-white/5 hover:bg-white/10 border border-white/10 hover:border-brand-indigo/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
+            <div class="w-12 h-12 rounded-xl bg-brand-indigo/20 flex items-center justify-center mb-6 group-hover:bg-brand-indigo/40 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand-indigo" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Full-Stack Engineering</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Modern web and mobile applications built on scalable, cloud-native architectures.</p>
+          </div>
+          <div class="service-card group relative bg-white/5 hover:bg-white/10 border border-white/10 hover:border-brand-indigo/50 rounded-2xl p-8 transition-all duration-300 hover:-translate-y-1">
+            <div class="w-12 h-12 rounded-xl bg-brand-indigo/20 flex items-center justify-center mb-6 group-hover:bg-brand-indigo/40 transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-brand-indigo" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Growth & Scale</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">Performance optimisation, DevOps automation, and data-driven iteration to 10× your metrics.</p>
+          </div>
+        </div>
+        <div class="text-center mt-12">
+          <a href="services.html" class="inline-flex items-center gap-2 text-brand-indigo hover:text-violet-400 font-semibold transition-colors">
+            View all services
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───── SOCIAL PROOF ───── -->
+    <section class="py-20 px-6 lg:px-8 border-y border-white/10 bg-white/[0.02]">
+      <div class="max-w-7xl mx-auto">
+        <p class="text-center text-xs text-slate-500 uppercase tracking-widest font-semibold mb-10">Trusted by innovative teams</p>
+        <div class="flex flex-wrap items-center justify-center gap-10 opacity-50">
+          <span class="text-2xl font-black tracking-tight">NovaSaaS</span>
+          <span class="text-2xl font-black tracking-tight">PulseAI</span>
+          <span class="text-2xl font-black tracking-tight">StackFlow</span>
+          <span class="text-2xl font-black tracking-tight">LaunchPad</span>
+          <span class="text-2xl font-black tracking-tight">CoreCloud</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───── TESTIMONIAL ───── -->
+    <section class="py-28 px-6 lg:px-8">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="inline-flex gap-1 mb-8"><span class="text-yellow-400 text-2xl">★★★★★</span></div>
+        <blockquote class="text-2xl sm:text-3xl font-semibold leading-relaxed text-white/90 mb-8">
+          "Linfy Tech didn't just build our product — they became a strategic partner that genuinely cared about our success. Our Series A closed three months after launch."
+        </blockquote>
+        <div class="flex items-center justify-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-brand-indigo/40 flex items-center justify-center font-bold text-brand-indigo">A</div>
+          <div class="text-left"><p class="font-semibold text-sm">Alex Rivera</p><p class="text-slate-400 text-xs">CEO, PulseAI</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ───── CTA BANNER ───── -->
+    <section class="py-20 px-6 lg:px-8">
+      <div class="max-w-5xl mx-auto">
+        <div class="relative overflow-hidden rounded-3xl bg-gradient-to-br from-brand-indigo to-violet-600 p-12 sm:p-16 text-center">
+          <div class="absolute inset-0 bg-[url('data:image/svg+xml,%3Csvg width=%2260%22 height=%2260%22 viewBox=%220 0 60 60%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cg fill=%22none%22 fill-rule=%22evenodd%22%3E%3Cg fill=%22%23ffffff%22 fill-opacity=%220.05%22%3E%3Cpath d=%22M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')]"></div>
+          <div class="relative">
+            <h2 class="text-3xl sm:text-4xl font-black mb-4">Ready to build something great?</h2>
+            <p class="text-white/80 mb-8 max-w-xl mx-auto">Let's talk about your next product. Our team is ready to turn your vision into a market-ready reality.</p>
+            <a href="contact.html" class="inline-flex items-center gap-2 bg-white text-brand-indigo font-bold px-8 py-4 rounded-xl hover:bg-slate-100 transition-colors shadow-xl">
+              Start a Project
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="border-t border-white/10 py-12 px-6 lg:px-8">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="w-7 h-7 rounded-lg bg-brand-indigo flex items-center justify-center text-white font-black text-xs">L</span>
+        <span class="font-bold">Linfy<span class="text-brand-indigo">Tech</span></span>
+      </a>
+      <nav class="flex gap-6 text-sm text-slate-400">
+        <a href="index.html"    class="hover:text-white transition-colors">Home</a>
+        <a href="services.html" class="hover:text-white transition-colors">Services</a>
+        <a href="about.html"    class="hover:text-white transition-colors">About</a>
+        <a href="contact.html"  class="hover:text-white transition-colors">Contact</a>
+      </nav>
+      <p class="text-xs text-slate-500">© 2025 Linfy Tech. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
